@@ -15,15 +15,20 @@
 ### END INIT INFO
  
 #Settings
-SERVICE='BTeam.jar'
-OPTIONS='nogui'
+# username which is used to run your minecraft server
 USERNAME='ubuntu'
+# filename for the server JAR, usually 'minecraft_server.jar'
+SERVICE='BTeam.jar'
+# name of your world directory
 WORLD='world'
-MCPATH='/home/ubuntu/data'
-BACKUPPATH='/home/ubuntu/minecraft.backup'
+OPTIONS='nogui'
+MCPATH='/home/${USERNAME}/data'
+BACKUPPATH='/home/${USERNAME}/minecraft.backup'
+# run with 3GB HEAP
 MAXHEAP=3G
 MINHEAP=2G
 HISTORY=1024
+# number of cores you want to use
 CPU_COUNT=1
 INVOCATION="java -Xmx${MAXHEAP} -Xms${MINHEAP} -XX:+UseConcMarkSweepGC \
 -XX:+CMSIncrementalPacing -XX:ParallelGCThreads=$CPU_COUNT -XX:+AggressiveOpts \
