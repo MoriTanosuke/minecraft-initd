@@ -16,14 +16,14 @@
  
 #Settings
 # username which is used to run your minecraft server
-USERNAME='ubuntu'
+USERNAME=ubuntu
 # filename for the server JAR, usually 'minecraft_server.jar'
-SERVICE='BTeam.jar'
+SERVICE=BTeam.jar
 # name of your world directory
-WORLD='world'
-OPTIONS='nogui'
-MCPATH='/home/${USERNAME}/data'
-BACKUPPATH='/home/${USERNAME}/minecraft.backup'
+WORLD=world
+OPTIONS=nogui
+MCPATH=/home/${USERNAME}/data
+BACKUPPATH=/home/${USERNAME}/minecraft.backup
 # run with 3GB HEAP
 MAXHEAP=3G
 MINHEAP=2G
